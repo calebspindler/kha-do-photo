@@ -1,0 +1,74 @@
+
+
+.container {
+  display: flex;
+}
+
+#leftPanel {
+  flex-grow: 1;
+  min-width: 20%;
+}
+
+header {
+  position: fixed;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  margin-left: 1.5em;
+}
+
+#photoGallery {
+  flex-grow: 2;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+#branding h1 {
+  font-size: 3em;
+  margin-bottom: 0;
+}
+
+#branding h2 {
+  font-size: 1em;
+  margin-top: 0;
+}
+
+#photoGallery img {
+  width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.row {
+    display: -ms-flexbox; /* IE 10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE 10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    -ms-flex: 25%; /* IE 10 */
+    flex: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}

@@ -11,18 +11,48 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="scripts.js"></script>
   </head>
-  <body>
-    <header>
-      <div id="branding">
-        <h1>Kha Do</h1>
-        <h2>Photography</h2>
+  <body class="container">
+    <div id="leftPanel">
+      <header class="container">
+        <div id="branding">
+          <h1>Kha Do</h1>
+          <h2>Photography</h2>
+        </div>
+        <nav>
+          <ul class="container">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <section id="photoGallery">
+      <div class="row">
+        <div class="column">
+          <img src="/img/portrait1.jpg">
+          <img src="/img/portrait2.jpg">
+          <img src="/img/portrait3.jpg">
+          <img src="/img/portrait4.jpg">
+        </div>
+        <div class="column">
+          <img src="/img/portrait2.jpg">
+          <img src="/img/portrait3.jpg">
+          <img src="/img/portrait4.jpg">
+          <img src="/img/portrait1.jpg">
+        </div>
+        <div class="column">
+          <img src="/img/portrait3.jpg">
+          <img src="/img/portrait4.jpg">
+          <img src="/img/portrait1.jpg">
+          <img src="/img/portrait2.jpg">
+        </div>
+        <div class="column">
+          <img src="/img/portrait4.jpg">
+          <img src="/img/portrait1.jpg">
+          <img src="/img/portrait2.jpg">
+          <img src="/img/portrait3.jpg">
+        </div>
       </div>
-      <nav>
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    </section>
   </body>
 </html>
