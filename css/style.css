@@ -6,7 +6,7 @@
 
 #leftPanel {
   flex-grow: 1;
-  min-width: 20%;
+  min-width: 25%;
 }
 
 header {
@@ -14,16 +14,28 @@ header {
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
-  margin-left: 1.5em;
+  margin-left: 3em;
+  width: 25%;
 }
 
 #photoGallery {
   flex-grow: 2;
 }
 
+nav {
+  border-top: 3px solid #1a1a1a;
+  margin-bottom: 4em;
+  margin-right: 6em;
+}
+
 nav ul {
   list-style: none;
   padding: 0;
+  flex-direction: column;
+}
+
+nav ul li {
+  font-size: 1.5em
 }
 
 nav a {
@@ -31,12 +43,12 @@ nav a {
 }
 
 #branding h1 {
-  font-size: 3em;
+  font-size: 4em;
   margin-bottom: 0;
 }
 
 #branding h2 {
-  font-size: 1em;
+  font-size: 1.2em;
   margin-top: 0;
 }
 
