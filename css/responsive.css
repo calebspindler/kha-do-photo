@@ -11,7 +11,21 @@
     header {
       position: relative;
       flex-direction: row;
-      height: 40vh;
+      height: 200px;
+      width: 100%;
+      align-items: baseline;
+    }
+    nav ul {
+      flex-direction: row;
+    }
+    nav {
+      border-top: none;
+    }
+    nav ul a {
+      margin-left: 1em;
+    }
+    #photoGallery {
+      margin: 0 1em;
     }
 }
 
