@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/responsive.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
     <script src="scripts.js"></script>
   </head>
   <body class="container">
@@ -27,30 +28,54 @@
       </header>
     </div>
     <section id="photoGallery">
-      <div class="row">
+      <div class="row gallery">
         <div class="column">
-          <img src="img/portrait1.jpg">
-          <img src="img/portrait2.jpg">
-          <img src="img/portrait3.jpg">
-          <img src="img/portrait4.jpg">
+          <img src="img/portrait1-500.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+          <img src="img/portrait2-500.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+          <img src="img/portrait3-500.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+          <img src="img/portrait4-500.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
         </div>
         <div class="column">
-          <img src="img/portrait2.jpg">
-          <img src="img/portrait3.jpg">
-          <img src="img/portrait4.jpg">
-          <img src="img/portrait1.jpg">
+          <img src="img/portrait2-500.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+          <img src="img/portrait3-500.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+          <img src="img/portrait4-500.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+          <img src="img/portrait1-500.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
         </div>
         <div class="column">
-          <img src="img/portrait3.jpg">
-          <img src="img/portrait4.jpg">
-          <img src="img/portrait1.jpg">
-          <img src="img/portrait2.jpg">
+          <img src="img/portrait3-500.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+          <img src="img/portrait4-500.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+          <img src="img/portrait1-500.jpg" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+          <img src="img/portrait2-500.jpg" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
         </div>
         <div class="column">
-          <img src="img/portrait4.jpg">
-          <img src="img/portrait1.jpg">
-          <img src="img/portrait2.jpg">
-          <img src="img/portrait3.jpg">
+          <img src="img/portrait4-500.jpg" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
+          <img src="img/portrait1-500.jpg" onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
+          <img src="img/portrait2-500.jpg" onclick="openModal();currentSlide(15)" class="hover-shadow cursor">
+          <img src="img/portrait3-500.jpg" onclick="openModal();currentSlide(16)" class="hover-shadow cursor">
+        </div>
+      </div>
+
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+          <div class="mySlides container">
+            <img src="https://res.cloudinary.com/spindler-creative/image/upload/v1537237101/portrait1.jpg">
+          </div>
+
+          <div class="mySlides">
+            <img src="img/portrait2-500.jpg">
+          </div>
+
+          <div class="mySlides">
+            <img src="img/portrait3-500.jpg">
+          </div>
+
+          <div class="mySlides">
+            <img src="img/portrait4-500.jpg">
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
       </div>
     </section>
