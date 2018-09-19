@@ -13,18 +13,27 @@
    GLOBAL SETTINGS
 ==================== */
 
-.container {
-  display: flex;
+* {
+    box-sizing: border-box;
 }
 
 /* =================
    PRIMARY SETTINGS
 ==================== */
 
+.container {
+  display: flex;
+}
+
+body {
+    margin: 0;
+    font-family: 'Nanum Myeongjo', serif;
+}
 
 /* =================
    HEADER SETTINGS
 ==================== */
+
 #leftPanel {
   flex-grow: 1;
   min-width: 25%;
@@ -39,17 +48,22 @@ header {
   width: 25%;
 }
 
-/* =================
-   BODY SETTINGS
-==================== */
-
-#photoGallery {
-  flex-grow: 2;
+#branding h1 {
+  font-size: 4em;
+  margin-bottom: 0;
 }
 
+#branding h2 {
+  font-size: 1.2em;
+  margin-top: -0.5em;
+  font-weight: 400;
+  padding-left: 0.2em;
+}
+
+/* Navigation */
 nav {
-  border-top: 3px solid #1a1a1a;
-  margin-bottom: 4em;
+  border-top: 2px solid #1a1a1a;
+  margin-bottom: 3em;
   margin-right: 6em;
 }
 
@@ -68,34 +82,17 @@ nav a {
   color: black;
 }
 
-#branding h1 {
-  font-size: 4em;
-  margin-bottom: 0;
-}
+/* =================
+   BODY SETTINGS
+==================== */
 
-#branding h2 {
-  font-size: 1.2em;
-  margin-top: -0.7em;
-  font-weight: 400;
-  padding-left: 0.2em;
+/* Photo Gallery */
+#photoGallery {
+  flex-grow: 2;
 }
 
 .gallery img {
   width: 100%;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    font-family: 'Lora', serif;
-}
-
-.header {
-    text-align: center;
-    padding: 32px;
 }
 
 .row {
@@ -106,11 +103,10 @@ body {
     padding: 0 4px;
 }
 
-/* Create four equal columns that sits next to each other */
 .column {
-    -ms-flex: 25%; /* IE10 */
+    -ms-flex: 25%; /* IE 10 */
     flex: 25%;
-    max-width: 25%; /* For 4 columns, set to 25% */
+    max-width: 25%;
     padding: 0 4px;
 }
 
@@ -120,8 +116,7 @@ body {
 }
 
 
-/*============= Modal */
-
+/* Modal */
 
 /* The Modal (background) */
 .modal {
@@ -202,15 +197,6 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
 .caption-container {
   text-align: center;
   background-color: black;
@@ -218,12 +204,7 @@ body {
   color: white;
 }
 
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
+.active {
   opacity: 1;
 }
 
@@ -239,3 +220,7 @@ img.hover-shadow {
   width: auto;
   height: 80vh;
 }
+
+/* =================
+   FOOTER SETTINGS
+==================== */
