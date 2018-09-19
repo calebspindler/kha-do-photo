@@ -76,6 +76,8 @@ nav a {
 #branding h2 {
   font-size: 1.2em;
   margin-top: -0.7em;
+  font-weight: 400;
+  padding-left: 0.2em;
 }
 
 .gallery img {

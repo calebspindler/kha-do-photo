@@ -1,4 +1,10 @@
 /* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1150px) {
+  #photoGallery {
+    padding-left: 2.5em;
+  }
+}
+
 @media screen and (max-width: 1000px) {
     .column {
         -ms-flex: 50%;
@@ -26,6 +32,7 @@
     }
     #photoGallery {
       margin: 0 1em;
+      padding-left: 0;
     }
 }
 
@@ -35,5 +42,28 @@
         -ms-flex: 100%;
         flex: 100%;
         max-width: 100%;
+    }
+    header {
+      flex-direction: column;
+      margin-left: 0;
+      justify-content: center;
+      align-items: center;
+      height: 275px;
+    }
+    #branding {
+      text-align: center;
+    }
+    #branding h1 {
+      font-size: 4em;
+    }
+    #branding h2 {
+      font-size: 1.5em;
+    }
+    nav {
+      margin-right: 0;
+      margin-bottom: 1.5em;
+    }
+    nav ul a {
+      margin-left: 0;
     }
 }
