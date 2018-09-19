@@ -1,4 +1,4 @@
-/* Responsive layout - makes a two column-layout instead of four columns */
+
 @media screen and (max-width: 1150px) {
   #photoGallery {
     padding-left: 2.5em;
