@@ -31,3 +31,31 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "flex";
 }
+
+/* ajax */
+
+// Load About Page
+function loadAbout() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("photoGallery").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "about.html", true);
+  xhttp.send();
+  window.history.pushState("object or string", "Title", "/about");
+}
+
+// Load Contact Page
+function loadContact() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("photoGallery").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "contact.html", true);
+  xhttp.send();
+  window.history.pushState("object or string", "Title", "/contact");
+}

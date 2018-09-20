@@ -53,6 +53,11 @@ header {
   margin-bottom: 0;
 }
 
+#branding h1 a {
+  text-decoration: none;
+  color: black
+}
+
 #branding h2 {
   font-size: 1.2em;
   margin-top: -0.5em;
