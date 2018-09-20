@@ -42,7 +42,7 @@ function loadAbout() {
       document.getElementById("photoGallery").innerHTML = this.responseText;
     }
   };
-  xhttp.open("GET", "about.html", true);
+  xhttp.open("GET", "/kha-do-photo/about.html", true); //Remove kha-do-photo before launch
   xhttp.send();
   window.history.pushState("object or string", "Title", "/about");
 }
@@ -55,7 +55,7 @@ function loadContact() {
       document.getElementById("photoGallery").innerHTML = this.responseText;
     }
   };
-  xhttp.open("GET", "contact.html", true);
+  xhttp.open("GET", "/kha-do-photo/contact.html", true);
   xhttp.send();
   window.history.pushState("object or string", "Title", "/contact");
 }
