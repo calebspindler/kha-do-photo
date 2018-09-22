@@ -118,7 +118,9 @@ body {
 }
 
 /* Photo Gallery */
-#photoGallery {
+#photoGallery,
+#aboutPage,
+#contactPage {
   flex-grow: 2;
 }
 
