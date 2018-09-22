@@ -26,9 +26,9 @@
 }
 
 body {
-    margin: 0;
     font-family: 'Nanum Myeongjo', serif;
-    margin-left: 3em;
+    max-width: 80%;
+    margin: auto;
 }
 
 .fadeIn {
@@ -55,17 +55,18 @@ body {
 ==================== */
 
 #leftPanel {
-  flex-grow: 1;
   min-width: 25%;
-  margin-top: 3em;
 }
 
 header {
-  position: fixed;
-  flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
-  width: 25%;
+  height: 100px;
+  width: 100%;
+  align-items: baseline;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-top: 3.5em;
+  margin-bottom:1em;
 }
 
 #branding h1 {
@@ -88,20 +89,19 @@ header {
 }
 
 /* Navigation */
-nav {
-  border-top: 2px solid #1a1a1a;
-  margin-bottom: 6em;
-  margin-right: 6em;
-}
 
 nav ul {
   list-style: none;
   padding: 0;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 nav ul li {
   font-size: 1.5em
+}
+
+nav ul li:nth-child(2) {
+  margin-left: 0.5em;
 }
 
 nav a {
@@ -113,16 +113,7 @@ nav a {
    BODY SETTINGS
 ==================== */
 
-body {
-  padding-right: 3em;
-}
-
 /* Photo Gallery */
-#photoGallery,
-#aboutPage,
-#contactPage {
-  flex-grow: 2;
-}
 
 .gallery img {
   width: 100%;

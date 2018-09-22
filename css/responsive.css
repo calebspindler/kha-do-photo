@@ -1,12 +1,4 @@
 
-@media screen and (max-width: 1150px) {
-  #photoGallery {
-    padding-left: 2.5em;
-  }
-  nav {
-    margin-right: 4em;
-  }
-}
 
 @media screen and (max-width: 1000px) {
     .column {
@@ -15,35 +7,7 @@
         max-width: 50%;
     }
     body {
-      flex-direction: column;
-    }
-    header {
-      position: relative;
-      flex-direction: row;
-      height: 200px;
-      width: 100%;
-      align-items: baseline;
-    }
-    nav ul {
-      flex-direction: row;
-    }
-    nav {
-      border-top: none;
-      margin-right: 0;
-    }
-    nav ul a {
-      margin-left: 1em;
-    }
-    nav ul li:nth-child(2) {
-      margin-left: 0.5em;
-    }
-    #photoGallery {
-      margin: 0 1em;
-      padding-left: 0;
-    }
-    header {
-      margin-left: 0;
-      padding: 2em;
+      max-width: 95%;
     }
 }
 
@@ -56,10 +20,9 @@
     }
     header {
       flex-direction: column;
-      margin-left: 0;
       justify-content: center;
       align-items: center;
-      height: 275px;
+      margin-top: 6.5em;
     }
     #branding {
       text-align: center;
