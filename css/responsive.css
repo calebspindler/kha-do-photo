@@ -34,6 +34,9 @@
     nav ul a {
       margin-left: 1em;
     }
+    nav ul li:nth-child(2) {
+      margin-left: 0.5em;
+    }
     #photoGallery {
       margin: 0 1em;
       padding-left: 0;
