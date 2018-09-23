@@ -33,7 +33,7 @@ body {
 
 .fadeIn {
   opacity: 0;
-  animation: fadeIn 1.8s forwards;
+  animation: fadeIn 1.1s forwards;
 }
 
 @keyframes fadeIn {
@@ -266,3 +266,8 @@ img.hover-shadow {
 /* =================
    FOOTER SETTINGS
 ==================== */
+
+footer {
+  text-align: center;
+  padding: 3em 0 3em 0;
+}
