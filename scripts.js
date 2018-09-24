@@ -1,5 +1,7 @@
+/* =================
+   PHOTO MODAL
+==================== */
 
-/* Photo Modal */
 function openModal() {
   document.getElementById('myModal').style.display = "flex";
 }
@@ -8,8 +10,24 @@ function closeModal() {
   document.getElementById('myModal').style.display = "none";
 }
 
+// Using the Keyboard to Navigate and Close Modal
+document.onkeydown = function(evt) {
+    evt = evt || window.event;
+    //escape key to escape modal
+    if (evt.keyCode == 27) {
+      document.getElementById('myModal').style.display = "none";
+    }
+    //left arrow to go left
+    if (evt.keyCode == 37) {
+      plusSlides(-1);
+    }
+    //right arrow to go right
+    if (evt.keyCode == 39) {
+      plusSlides(+1);
+    }
+};
+
 var slideIndex = 1;
-showSlides(slideIndex);
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
