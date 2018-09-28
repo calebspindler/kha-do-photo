@@ -1,6 +1,7 @@
 // Toggle Mobile Menu Button
 $(document).ready(function(){
-  $('#mobileBtn').click(function(){
+  $('#nav-icon3').click(function(){
+    $(this).toggleClass('open');
     $('#mobileMenu').toggleClass("hide");
     $('#photoGallery').toggleClass("gallerySpace")
   })

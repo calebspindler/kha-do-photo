@@ -12,7 +12,7 @@
 }
 
 @media screen and (min-width: 600px) {
-  #mobileBtn,
+  #nav-icon3,
   #mobileMenu {
     display: none;
   }
@@ -24,7 +24,7 @@
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
     .gallerySpace {
-      padding-top: 4em;
+      padding-top: 7em;
     }
     .column {
         -ms-flex: 100%;
@@ -54,6 +54,9 @@
     nav ul a {
       margin-left: 0;
     }
+    nav ul li:nth-child(2) {
+      margin-top: 1em;
+    }
     .mySlides img {
       width: auto;
       height: 55vh;
@@ -64,7 +67,7 @@
     .hide {
       display: none;
     }
-    #mobileBtn {
-      font-size: 1.5em;
+    #mobileMenu {
+      padding-top: 15px;
     }
 }
