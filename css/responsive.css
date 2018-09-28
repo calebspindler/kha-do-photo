@@ -11,8 +11,21 @@
     }
 }
 
+@media screen and (min-width: 600px) {
+  #mobileBtn,
+  #mobileMenu {
+    display: none;
+  }
+  nav ul li:nth-child(2) {
+    margin-left: 1em;
+  }
+}
+
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
+    .gallerySpace {
+      padding-top: 4em;
+    }
     .column {
         -ms-flex: 100%;
         flex: 100%;
@@ -20,9 +33,9 @@
     }
     header {
       flex-direction: column;
-      justify-content: center;
       align-items: center;
-      margin-top: 6.5em;
+      margin-top: 4em;
+      margin-bottom: 4em;
     }
     #branding {
       text-align: center;
@@ -36,6 +49,7 @@
     nav {
       margin-right: 0;
       margin-bottom: 1.5em;
+      text-align: center;
     }
     nav ul a {
       margin-left: 0;
@@ -43,5 +57,14 @@
     .mySlides img {
       width: auto;
       height: 55vh;
+    }
+    #fullscreenMenu {
+      display: none;
+    }
+    .hide {
+      display: none;
+    }
+    #mobileBtn {
+      font-size: 1.5em;
     }
 }

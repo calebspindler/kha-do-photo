@@ -1,3 +1,11 @@
+// Toggle Mobile Menu Button
+$(document).ready(function(){
+  $('#mobileBtn').click(function(){
+    $('#mobileMenu').toggleClass("hide");
+    $('#photoGallery').toggleClass("gallerySpace")
+  })
+})
+
 /* =================
    PHOTO MODAL
 ==================== */
