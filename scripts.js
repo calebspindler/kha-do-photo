@@ -3,7 +3,7 @@ $(document).ready(function(){
   $('#nav-icon3').click(function(){
     $(this).toggleClass('open');
     $('#mobileMenu').toggleClass("hide");
-    $('#photoGallery').toggleClass("gallerySpace")
+    $('#photoGallery, #aboutPage, #contactPage').toggleClass("gallerySpace")
   })
 })
 
