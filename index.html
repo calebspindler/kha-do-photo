@@ -47,7 +47,6 @@
       <div class="row gallery fadeIn">
         <div class="column">
           <img src="https://res.cloudinary.com/spindler-creative/image/upload/c_scale,w_500/v1537237101/portrait1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" oncontextmenu="return false;">
-          <!-- oncontextmenu="alert('&copy; Kha Do');return false;" -->
           <img src="https://res.cloudinary.com/spindler-creative/image/upload/c_scale,w_500/v1537275236/portrait2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor" oncontextmenu="return false;">
           <img src="https://res.cloudinary.com/spindler-creative/image/upload/c_scale,w_500/v1537275219/portrait3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor" oncontextmenu="return false;">
           <img src="https://res.cloudinary.com/spindler-creative/image/upload/c_scale,w_500/v1537275224/portrait4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" oncontextmenu="return false;">
@@ -76,20 +75,20 @@
         <span class="close cursor" onclick="closeModal()">&times;</span>
         <div class="modal-content">
 
-          <div class="mySlides container">
-            <img src="https://res.cloudinary.com/spindler-creative/image/upload/v1537237101/portrait1.jpg" oncontextmenu="return false;">
+          <div class="mySlides">
+            <img class="verticalSlides" src="https://res.cloudinary.com/spindler-creative/image/upload/v1537237101/portrait1.jpg" oncontextmenu="return false;">
           </div>
 
           <div class="mySlides">
-            <img src="https://res.cloudinary.com/spindler-creative/image/upload/v1537275236/portrait2.jpg" oncontextmenu="return false;">
+            <img class="horizontalSlides" src="https://res.cloudinary.com/spindler-creative/image/upload/v1537275236/portrait2.jpg" oncontextmenu="return false;">
           </div>
 
           <div class="mySlides">
-            <img src="https://res.cloudinary.com/spindler-creative/image/upload/v1537275219/portrait3.jpg" oncontextmenu="return false;">
+            <img class="verticalSlides" src="https://res.cloudinary.com/spindler-creative/image/upload/v1537275219/portrait3.jpg" oncontextmenu="return false;">
           </div>
 
           <div class="mySlides">
-            <img src="https://res.cloudinary.com/spindler-creative/image/upload/v1537275224/portrait4.jpg" oncontextmenu="return false;">
+            <img class="verticalSlides" src="https://res.cloudinary.com/spindler-creative/image/upload/v1537275224/portrait4.jpg" oncontextmenu="return false;">
           </div>
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
           <a class="next" onclick="plusSlides(1)">&#10095;</a>

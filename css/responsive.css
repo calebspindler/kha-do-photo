@@ -60,7 +60,9 @@
     }
     .mySlides img {
       width: auto;
-      height: 55vh;
+      max-width: 65vw;
+      height: auto;
+      max-height: 55vh;
     }
     #fullscreenMenu {
       display: none;
