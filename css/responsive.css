@@ -16,13 +16,16 @@
   #mobileMenu {
     display: none;
   }
+  #logo {
+    max-width: 250px;
+  }
+  #fullscreenMenu {
+    margin-top: 60px;
+  }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-    .gallerySpace {
-      padding-top: 7em;
-    }
     .column {
         -ms-flex: 100%;
         flex: 100%;
@@ -31,17 +34,6 @@
     header {
       flex-direction: column;
       align-items: center;
-      margin-top: 4em;
-      margin-bottom: 4em;
-    }
-    #branding {
-      text-align: center;
-    }
-    #branding h1 {
-      font-size: 4em;
-    }
-    #branding h2 {
-      font-size: 1.2em;
     }
     nav {
       margin-right: 0;

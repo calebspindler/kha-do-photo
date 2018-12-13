@@ -60,32 +60,15 @@ body {
 
 header {
   justify-content: space-between;
-  height: 100px;
   width: 100%;
-  align-items: baseline;
+  align-items: center;
   padding-left: 8px;
   padding-right: 8px;
-  margin-top: 3.5em;
-  margin-bottom:1em;
+  margin-top: 3rem;
 }
 
-#branding h1 {
-  font-size: 4em;
-  margin-bottom: 0;
-  margin-top: 0;
-}
-
-#branding h1 a,
-#branding h2 a {
-  text-decoration: none;
-  color: black
-}
-
-#branding h2 {
-  font-size: 1.2em;
-  margin-top: -0.5em;
-  font-weight: 400;
-  padding-left: 0.2em;
+#logo {
+  max-width: 100%;
 }
 
 /* Navigation */
@@ -97,7 +80,7 @@ nav ul {
 }
 
 nav ul li {
-  font-size: 1.5em
+  font-size: 1.5rem
 }
 
 nav a {
@@ -148,7 +131,6 @@ nav a:hover:before {
 /* Icon 1 */
 
 #nav-icon3 {
-  margin-top: 10px;
   padding: 15px;
   width: 40px;
   height: 45px;
