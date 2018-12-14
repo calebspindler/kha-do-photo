@@ -356,7 +356,17 @@ img.hover-shadow {
   justify-content: center;
   width: 70%;
   margin: auto;
-  padding-top: 3em;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}
+
+#aboutImage {
+  width: 100%;
+}
+
+#workedWith ul {
+  list-style-type: none;
+  padding: 0;
 }
 
 /* =================
