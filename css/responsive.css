@@ -11,6 +11,29 @@
     }
 }
 
+@media screen and (min-width: 1000px) {
+  #aboutContainer {
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  #aboutImage {
+    width: 50%;
+    height: 50%;
+    max-width: 500px;
+  }
+  #aboutContainer {
+    margin-top: 2rem;
+  }
+  #workedWith {
+    margin-right: 2rem;
+  }
+  #workedWith p {
+    margin-top: 0;
+  }
+}
+
 @media screen and (min-width: 600px) {
   #nav-icon3,
   #mobileMenu {
@@ -22,49 +45,53 @@
   #fullscreenMenu {
     margin-top: 60px;
   }
+  #photoGallery {
+    margin-top: 0;
+  }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-    .column {
-        -ms-flex: 100%;
-        flex: 100%;
-        max-width: 100%;
-    }
-    header {
-      flex-direction: column;
-      align-items: center;
-    }
-    nav {
-      margin-right: 0;
-      margin-bottom: 1.5em;
-      text-align: center;
-    }
-    nav ul a {
-      margin-left: 0;
-      padding: 0.5em;
-    }
-    nav ul li:nth-child(2) {
-      margin-top: 1em;
-    }
-    .mySlides img {
-      width: auto;
-      max-width: 65vw;
-      height: auto;
-      max-height: 55vh;
-    }
-    #fullscreenMenu {
-      display: none;
-    }
-    .hide {
-      display: none;
-    }
-    #mobileMenu {
-      padding-top: 15px;
-      z-index: 10;
-    }
-    #aboutContent,
-    #contactContent {
-      padding-top: 0;
-    }
+  .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+  }
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav {
+    margin-right: 0;
+    margin-bottom: 1.5em;
+    text-align: center;
+  }
+  nav ul a {
+    margin-left: 0;
+    padding: 0.5em;
+  }
+  nav ul li:nth-child(2) {
+    margin-top: 1em;
+  }
+  .mySlides img {
+    width: auto;
+    max-width: 65vw;
+    height: auto;
+    max-height: 55vh;
+  }
+  #fullscreenMenu {
+    display: none;
+  }
+  .hide {
+    display: none;
+  }
+  #mobileMenu {
+    padding-top: 15px;
+    z-index: 10;
+  }
+  #aboutContent,
+  #contactContent {
+    padding-top: 0;
+    width: 95%;
+  }
 }

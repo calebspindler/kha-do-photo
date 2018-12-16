@@ -208,6 +208,10 @@ nav a:hover:before {
 
 /* Photo Gallery */
 
+#photoGallery {
+  margin-top: 1rem;
+}
+
 .gallery img {
   width: 100%;
 }
@@ -352,21 +356,32 @@ img.hover-shadow {
 #aboutContent,
 #contactContent {
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  width: 70%;
+  width: 80%;
   margin: auto;
-  padding-top: 3rem;
   padding-bottom: 5rem;
+  margin-top: 1rem;
+}
+
+#aboutContent h1,
+#contactContent h1 {
+  text-align: center;
 }
 
 #aboutImage {
   width: 100%;
+  height: 100%;
 }
 
 #workedWith ul {
   list-style-type: none;
   padding: 0;
+  margin-top: -12px;
+}
+
+#aboutContainer {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 /* =================
