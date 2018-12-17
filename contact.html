@@ -42,22 +42,20 @@
     </div>
     <section id="contactPage" class="fadeIn">
       <div id="contactContent" class="container">
-        <div id="contactCopy">
-          <form name="contact" method="POST" data-netlify="true">
-              <p>
-                <label>Name: <input type="text" name="name" /></label>   
-              </p>
-              <p>
-                <label>Email: <input type="email" name="email" /></label>
-              </p>
-              <p>
-                <label>Message: <textarea name="message"></textarea></label>
-              </p>
-              <p>
-                <button type="submit">Send</button>
-              </p>
-            </form>
-        </div>
+        <form id="contactForm" name="contact" method="POST" data-netlify="true">
+            <p id="name">
+              <label>Name<input type="text" name="name" /></label>   
+            </p>
+            <p id="email">
+              <label>Email<input type="email" name="email" /></label>
+            </p>
+            <p id="message">
+              <label>Message<textarea name="message"></textarea></label>
+            </p>
+            <p id="send">
+              <button class="button" type="submit">Send</button>
+            </p>
+          </form>
       </div>
     </section>
   </body>

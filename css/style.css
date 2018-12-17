@@ -27,7 +27,7 @@
 
 body {
     font-family: 'Nanum Myeongjo', serif;
-    max-width: 80%;
+    max-width: 90%;
     margin: auto;
 }
 
@@ -382,6 +382,84 @@ img.hover-shadow {
 #aboutContainer {
   display: flex;
   flex-direction: column-reverse;
+}
+
+/* Contact Section */
+#contactContent {
+  display: flex;
+  align-items: center;
+}
+
+input,
+textarea {
+  border: 1px solid #555555;
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+
+input {
+  height: 40px;
+}
+
+textarea {
+  height: 100px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none !important;
+  border: 2px solid #555555;
+  box-shadow: 0 0 5px #555555;
+}
+
+#name {
+  margin-top: 0;
+}
+
+input:hover,
+textarea:hover {
+  border: 2px solid #555555;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+input, select, textarea {
+  width: 100%;
+  margin-top: 5px;
+}
+
+#contactForm {
+  width: 80%;
+  max-width: 500px;
+}
+
+#send {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+
+.button:hover {
+  background-color: #555555;
+  color: white;
 }
 
 /* =================
