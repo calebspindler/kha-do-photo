@@ -60,3 +60,10 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "flex";
 }
+
+// Add Year to Copyright in the Footer
+
+window.onload = function() {
+  var getDate = new Date();
+  document.getElementById("date").innerHTML = getDate.getFullYear();
+}
