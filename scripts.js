@@ -62,8 +62,5 @@ function showSlides(n) {
 }
 
 // Add Year to Copyright in the Footer
-
-window.onload = function() {
-  var getDate = new Date();
-  document.getElementById("date").innerHTML = getDate.getFullYear();
-}
+var getDate = new Date();
+document.getElementById("date").innerHTML = getDate.getFullYear();
